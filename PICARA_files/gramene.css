@@ -1,0 +1,734 @@
+/* <style> */
+/* try to follow the formatting style and keep
+   the elements alphabetically sorted to make
+   this file easy to maintain.
+*/
+/* comments are outside of attribute sections - 
+   comments inside may confuse some browsers */
+
+form {
+	margin :0px;
+}
+
+ol             { list-style-type: decimal; }
+ol ol          { list-style-type: upper-alpha; }
+ol ol ol       { list-style-type: upper-roman; }
+ol ol ol ol    { list-style-type: lower-alpha; }
+ol ol ol ol ol { list-style-type: lower-roman; }
+
+/* Konqueror shows ul within ol with numbers unless we set this: 
+(change to disk or square if you want to) */
+ol ul { list-style-type: circle; }
+ol ul ul { list-style-type: disc; }
+ol ul ul ul { list-style-type: square; }
+
+a {   
+    text-decoration: none;
+}
+
+a:link { 
+    text-decoration: none; 
+    color: #0000FF;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: #990066;
+}
+
+a:hover { 
+    text-decoration: underline; 
+}
+
+a.gopage:link, a.gopage:visited { 
+    text-decoration: underline; 
+} 
+
+/* Overwrite specific ensembl.css styles */
+#page div.sptop { height: 0.5em }
+#related { top: 60px }
+
+
+/*  you probably want to keep banner the same color as the background
+      in Banner  and logo the same color as the background of Logo.
+    navbar is the sidebar of links.  
+    currentpage and notcurrent are for items in the navbar
+    */
+/* Susan doesn't like #5FFCF7; & it looks ugly with the chrom pics */
+/* #82FF57 is too garish on Macintosh */ 
+/* #C3FF90 was sort of ok.  #C8E79F  matches new logo */ 
+.banner { 
+    background-color: #FFFFFF; 
+    font-size: 18pt;
+    text-align: center;
+}
+
+.logo { 
+    background-color: #C8E79F; 
+    text-align: center; 
+}
+
+.navbar { background-color: #C8E79F; }
+
+td.navbar {
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    z-index:         1;
+}
+
+/* background color matches grain color. was #FFFF00;*/
+.currentpage { 
+    font-weight: bold;
+    background-color: #EDEDED;
+    font-size: 12px;
+    color: black;
+    /* background-color: #FFE263; */
+}
+
+.notcurrent { 
+    font-family: sans-serif;
+    font-weight: bold; 
+    font-size: 12px;
+    background-color: #E0E0E0;
+}   
+
+.currentpage_bottom { 
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: black;
+}
+
+.notcurrent_bottom { 
+    font-family: sans-serif;
+    font-weight: bold; 
+    font-size: 12px;
+}
+
+a.notcurrent_bottom { 
+
+}       
+
+td.notcurrent { 
+    font-family: sans-serif;
+    color: #000000; 
+}
+
+a.notcurrent { 
+
+}
+
+b { 
+    font-weight: bold; 
+}
+
+
+body {
+    font: 10pt sans-serif;
+    margin-top: 0;
+    border-top-width: 0;
+    padding-top: 0;
+}
+
+DIV.fix { 
+    font: 10pt sans-serif; 
+}
+
+FONT { 
+    font: 10pt sans-serif; 
+}
+
+H1 { 
+    font: bold 14pt sans-serif;
+    color: #663300;
+    text-align: center;
+}
+
+H1 a { 
+    font: bold 14pt sans-serif;
+    text-align: center;
+}
+
+H2 { 
+    font: bold 12pt sans-serif;
+    color: #663300;
+}
+
+H2 a { 
+    font: bold 12pt sans-serif;
+}
+
+H3 { 
+    font: 12pt sans-serif;
+    color: #663300;
+}
+
+H3 a { 
+    font: 12pt sans-serif; 
+}
+
+H4 { 
+    font: bold 10pt sans-serif;
+    color: #663300;
+}
+
+H4 a { 
+    font: bold 10pt sans-serif; 
+}
+
+P { 
+    font: 10pt sans-serif; 
+}
+
+PRE { 
+    font: 10pt monospace; 
+}
+
+PRE.code { 
+    font: 10pt monospace; 
+}
+
+SPAN.tiny { 
+    font-size: 8pt; 
+}
+
+STRONG { 
+    font-weight: bold; 
+}
+
+TD {
+    font: 10pt sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+TD.small {
+    font: 8pt sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+TD.main {
+    font: 10pt sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+TH { 
+    padding: 0;
+    margin: 0;
+}
+
+DL { 
+    font-family: sans-serif; 
+}
+
+DT { 
+    font-family: sans-serif; 
+}
+
+DD { 
+    font-family: sans-serif; 
+}
+
+/* for help form header */
+.helpheader{ font: bold 14pt sans-serif;
+    color: #666600;
+    background-color: #FFFFCC;
+}
+
+.smallnote {
+    font: 8pt sans-serif;
+}
+
+/* for submission form header */
+.submitheader     { 
+    font: bold 14pt sans-serif;
+    color: #663300;
+    background-color: #FFFFCC; 
+}
+
+.submitsubheader     { 
+    font: bold 12pt sans-serif;
+    color: #663300;
+    background-color: #FFFFCC; 
+}
+
+td.submitsubheader a { 
+    font: bold 12pt sans-serif;  
+}
+
+.submitsubheadersmall { 
+    font: bold 10pt sans-serif;  
+    background-color: #FFFFCC; 
+}
+
+.submitbody { 
+  background-color: #FFFFCC;
+}
+
+.trademarksize {
+    font-size: 5pt;
+}
+
+.smallrefsize {
+    font-size: 4pt;
+}
+
+.mediumfontsize {
+    font: bold 14pt sans-serif;
+}
+
+.alert { 
+    color: red; 
+}
+/* Use this class and the <span> tag to highlight instructions to the user. */
+
+.currentterm { 
+    color: red; 
+}
+
+.datawarning {
+    background-color: #FB6873;
+    color: #FDF459;
+}
+
+.databody {
+    background-color: #F3F3F3;
+    color: black;
+}
+
+.databodysmall {
+    background-color: #F3F3F3;
+    color: black;
+    font-size: 8pt;
+}
+
+tr.databodysmall th    { 
+    font-weight: bold;
+    font-size: 12pt;
+    font-family: times, serif;
+}
+
+.datatitle {
+    background-color: #cbeb9f;
+    color: black;
+}
+
+.rowodd {
+    background-color: #bef9f4;
+}
+
+.roweven {
+    background-color: #ffffcc;
+}
+
+
+/* Use this to highlight parts of results that match the search term. */
+.matching { 
+    color: red; 
+}
+
+.reftitle { 
+    font: 12pt sans-serif; 
+}
+
+th a { 
+    font-weight: bold;
+}
+
+.resultsbody,.background1 {
+    background-color: #F3F3F3;
+    color: black;
+}
+
+.resultstitle,.background2 {
+    background-color: #E0E0E0;
+    color: black;
+}
+
+.searchbody {
+   background-color: #F3F3F3;
+}
+
+.searchtitle {
+    background-color: #E0E0E0;
+    color: black;
+}
+
+.technicalinfo { 
+    background-color: white; 
+}
+
+.transposed { 
+    background-color: yellow;
+}
+
+.discordant { 
+    background-color: #E0E0E0;
+}
+
+.monotonic {
+    background-color: white;
+}
+
+.colored {
+    background-color: #E0E0E0;
+}
+
+.maptitle {
+    background-color: #E0E0E0;
+}
+
+.grain {
+   background-color: #FFE76F;
+}
+
+.sitemapbg { 
+    background-color: #E0E0E0;
+    color: black;
+}
+
+code { 
+    font-family: monospace,sans-serif; 
+    background-color: #FFFFE0; 
+}
+
+.variable { 
+    font-style: italic;  
+}
+
+code.variable { 
+    font-family: sans-serif; 
+    font-style: italic;  
+    background-color: #FFFFE0; 
+} 
+
+code span.variable { 
+    font-family: sans-serif; 
+    font-style: italic; 
+    background-color: #FFFFE0; 
+} 
+
+/* for documentation.  User's response: */
+.response { 
+    font-weight: bolder; 
+}
+
+table.display-table {
+    border: 1px solid #999999;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    background-color: #FFF; 
+    color: black;
+}
+
+table.display-table th {
+    background-color: #cbeb9f; 
+    /* background-color: #FFFFCC; */
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    text-align: center;
+    border: 1px solid #999999;
+}
+
+table.data-table {
+    border: 1px solid #999999;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    background-color: #677f56; 
+    color: black;
+}
+
+table.data-table th {
+    background-color: #cbeb9f; 
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    text-align: center;
+    border: 1px solid #999999;
+}
+
+table.data-table tr td {
+    background-color: #fcfcdd;/*#f9f9dd;*/
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    border-bottom: 1px solid #cccccc;
+}
+
+table.data-table tr:last-child td{
+    border-bottom: 0;
+}
+
+table.data-table tr.roweven td,
+table.data-table tr.rowodd td {
+    border-right: 1px solid #cccccc;
+    border-bottom: 0;
+}
+
+table.data-table tr.roweven td:last-child,
+table.data-table tr.rowodd td:last-child {
+   border-right: 0;
+}
+
+table.data-table tr.rowodd td {
+    background-color: #eef9dd;/*#ffffcc;*/
+}
+
+
+.small {
+    font: 8pt sans-serif;
+}
+
+.smallgreen {
+    font-size: 8pt;
+    color: green;
+}
+
+div.column-text {
+    width: 600;    
+    text-align: left;
+}
+
+.grm_container { 
+    background: #819C53;
+    color: #ffffcc;
+    font-family: verdana, helvetica, arial;
+    font-size: 12px;
+    text-align: left;
+    border: 2px solid black;
+    padding: 0.2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.grm_container_content { 
+    color: black;
+}
+
+.grm_container_header {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.2em;
+}
+
+.grm_section_content .grm_container_header {
+	border : none;
+}
+
+.grm_section_content .grm_container_header {
+    border : none;
+}
+
+.grm_section_content .grm_container {
+	border : none;
+	padding : 0px;
+	margin : 12px;
+}
+
+.grm_section_content table {
+    background-color : transparent;
+}
+
+.grm_section_content table tr {
+    background-color : transparent;
+}
+
+.grm_section_content table td {
+    background-color : transparent;
+}
+
+
+.grm_section,
+.grm_section_open,
+.grm_section_empty {
+    border: 1px inset black;
+    padding: 0.4em;
+    background: #CAE8A0;
+    font-size: 12px;
+    color: black;
+    margin-top: 0.2em;
+} 
+
+.grm_section_disabled {
+    border: 1px inset black;
+    padding: 0.4em;
+    background: lightgrey;
+    font-size: 12px;
+    color: grey;
+    margin-top: 0.2em;
+}
+
+div.grm_section:hover,
+.grm_section_open {
+    border: 1px outset black;
+} 
+
+.grm_section_header, .grm_section_header_empty {
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+} 
+
+.grm_section_empty {
+    background: lightgrey;
+    border-style: solid;
+    border-color: grey;
+}
+
+.grm_section_header_empty {
+    /* font-style : italic; */
+    font-weight: normal;
+    color: grey;
+    cursor : auto;
+}
+
+.grm_section_header > a {
+    font-weight : bold;
+    color : #000000;
+}
+
+.grm_section_header > a:hover {
+    font-weight : bold;
+    color : #000000;
+}
+
+div.grm_section_header:hover {
+    text-decoration: underline;
+}
+
+.grm_subsection_header,
+.grm_subsection h1,
+.grm_section_content h1{
+    color: #000000;
+    font-weight: normal;
+    font-size: 1.2em;
+    font-style: normal;
+    text-align: left;
+    cursor: pointer;
+}
+
+.grm_section_content {
+    background: #ffffcc;
+    border: 1px solid #819C53;
+    padding: 0.4em;
+    margin-top: 0.2em;
+    display: none;
+} 
+
+.grm_subsection_content {
+    display: none;
+}
+
+/* Some classes for HTML input elements */
+input.grm,
+select.grm,
+input.grm_button {
+  height: 1.4em;
+  padding: 0.1em;
+  vertical-align: bottom;
+  border: 1px solid #819C53;
+  margin-left: 3px;
+}
+
+input.grm_button {
+  /* border-style: outset; */
+  background: #F0F0F0;
+}
+
+select.grm {
+  height: 1.6em;
+}
+
+input.grm:focus,
+select.grm:focus,
+input.grm_button:focus{
+  border-color: darkred;
+  background: #FFFFCC;
+}
+
+.grm_search_box, .grm_search_eg {
+    margin-top: 1em;
+    text-align: center;
+    width: 100%;
+    font-size: small;
+    border-style: solid;
+    border-color: #819C53;
+    border-width: 1px 1px 0px 1px;
+}
+
+.grm_search_eg {
+    font-size: 0.8em;/* x-small; */
+    margin-top: 0em;
+    text-align: right;
+    font-family: arial, sans-serif;
+    border-width: 0px 1px 1px 1px;
+}
+
+.grm_search_eg a{
+    font-family: arial, sans-serif;
+    font-weight: bold;
+}
+
+.tooltip {
+        position: absolute;
+        display : none;
+        background-color: lightgray;
+        border : 3px double black;
+        font-size : 80%;
+        text-align : left;
+        z-index: 10;
+        padding-right : 2px;
+        padding-bottom : 2px;
+}
+
+div.toolbarmsg {
+        font-size : 150%;
+        font-style : italic;
+} 
+
+/* popup and div.suggestion are used by the auto complete boxes */
+.popup {
+	position: absolute;
+	visibility : hidden;
+	display : block;
+	border : 1px solid black;
+	font-size : 80%;
+	text-align : left;
+	z-index: 10;
+	padding : 2px;
+	background-color : white;
+	max-height : 100px;
+	width : 285px;
+	overflow : auto;
+}
+
+div.disable_suggestions {
+	background-color:#819c53;
+	text-align : right;
+}
+
+div.selected_suggestion {
+	background-color : #C8E79F;
+}
+
+div.pager {
+    text-align: center;
+}
+
+img.icon {
+        width : 16px;
+        height : 16px;
+        float : left;
+        margin-right : 3px;
+}
+
+
+
+# FCDD5E - grain color
+# CAE8A0 - light green
+# 819C53 - dark green
+# FFFFCC - sepia
+
+/* </style> */
+

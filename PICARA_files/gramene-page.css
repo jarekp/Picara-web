@@ -1,0 +1,406 @@
+/***************************************************
+/ Page layout (div layers) for Gramene pages
+/ Populated by the Gramene::Page module
+/ Page looks a bit like this:
+/
+/ +----------+--------------------------+
+/ | grm_logo | grm_banner               |
+/ |          +--------------------------+
+/ |          | grm_tabbar | tab  | tab  |
+/ +----------+------------------+-------+
+/ | left     | main             | right |
+/ | content  | content          | conten|
+/ |          |                  |       |
+/ |          |                  |       |
+/ +----------+------------------+-------+
+/ | grm_species                         |
+/ +-------------------------------------+
+/ | grm_footer                          |
+/ +-------------------------------------+ 
+/
+/*/
+
+body {
+  margin-top: 58px;
+  padding: 0px;
+}
+
+#grm_header {
+  position: absolute;
+  background: #cae8a0;
+  top: 0;
+  left: 0;
+  border: 0px solid #000;
+  margin: 0;
+  padding: 0;
+  /* right: -20; some kind of error here "Declaration dropped"? - ky */
+  text-align: left;
+  voice-family: "\"}\""; 
+  voice-family: inherit; 
+  right: 0;
+}
+
+#grm_logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background:   #fff;
+  border:       0px solid #000;
+  height:       58px; 
+  width:        180px;
+/*  voice-family: "\"}\""; */
+/*  voice-family: inherit; */
+/*  Put IE-specific settings under here */
+}
+
+#grm_banner {
+  margin: 0;
+  padding: 0;
+  margin-left:   180px;
+  padding-left:  0.5em;
+  padding-right:  0.3em;
+  font-size:     20px;
+  font-weight:   bold;
+  font-style:    italic;
+  font-family:   times,serif;
+  list-style: none;
+  vertical-align: middle;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+}
+
+#grm_banner li{
+  float: left;
+  vertical-align: middle;
+  background: none;
+  margin-top:    8px;
+  margin-bottom: 8px;
+  font-size:     20px;
+  font-weight:   normal;
+  font-style:    italic;
+  font-family:   times,serif;
+}
+
+#grm_banner select{
+  font-weight: normal;
+  font-style: normal;
+  font-size: small;
+  background: white;
+}
+
+
+
+#grm_version {
+  position:      absolute;
+  right:         0px;
+  top:           0px; 
+  padding-right: 0.3em;
+  height:        33px;
+  padding-top:   17px;
+  line-height:   20px;
+  font-size:     16px;
+  font-weight:   normal;
+  font-style:    italic;
+  font-variant:  small-caps;
+  font-family:   times, serif;
+}
+
+#grm_search {
+  position:      absolute;
+  /* width: 100%; */
+  right: 0;
+  text-align:    right;
+  top:           0px;
+  height:        33px; 
+  padding-top:   0px;
+  z-index:       1;
+  /* font-size:     normal; -- "normal" not legal -- "inherit"? */
+  font-weight:   bold;
+  font-variant:  small-caps;
+}
+
+#grm_genome_search {
+  position: relative;
+  padding-top: 9px;
+}       
+
+#grm_genome_search dl {
+  padding: 0;
+  margin: 0;
+  border: 1px solid #819c53;
+  background: #cae8a0;
+  height: 2.2em;
+}
+
+#grm_genome_search dd  {
+  float: right;
+  padding: 0;
+  margin: 0;
+  margin-top: 3px;
+  margin-right: 6px;
+}
+
+/* This overrides the ensembl.css setting... */
+#related { width: 201px; }
+/* ...done */
+
+#grm_tabbar {
+  background:   #819c53;
+  position:     absolute;
+  top:          34px;
+  left:         180px;
+  height:       25px;
+  right:        -20px;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  right:        0px;
+  z-index:      1000;
+}
+html>body #grm_tabbar {
+  left:         180px;
+  height:       24px;
+}
+
+#threecol_leftcontent {
+  text-align  : center;
+/*
+  left        : 0px;
+  top         : 58px;
+  position    : fixed;
+  height:       100%;
+*/
+#  background:   #F5FFE6;
+  background:   #c9e99f; /* changed kyc to match NEWS image bckgrnd */
+  padding-top:  1em;
+  border:       0px solid #fff;
+  width:        180px;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  z-index:   0;
+}
+
+html>body #threecol_leftcontent{
+  width:        180px;
+}
+
+#threecol_centercontent {
+  background:   #ffffff;
+  padding-top:  1em;
+  margin-left:  10px;
+  margin-right: 10px;
+/*
+  margin-left:  180px;
+  margin-right: 180px;
+  min-width: 200px;
+  min-height: 40em;
+*/
+}
+
+/*
+html>body #threecol_centercontent{ 
+  margin-left:  180px;
+  margin-right: 180px;
+  font-size: smaller;
+}
+*/
+
+#threecol_rightcontent {
+/*
+  position:     absolute;
+  right:        0px;
+  top:          58px;
+  height:       100%;
+*/
+  padding-top:  1em;
+  /* background:   #819c53; */
+  /* background:   #eedd82; */
+  background:   #f5ffe6;
+  border-top:   0px solid #fff;
+  width:        180px;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  /* z-index:      -1; */
+  z-index:   0;
+}
+html>body #threecol_rightcontent{
+  clear: left;
+  width:        180px;
+}
+
+#grm_footer {
+  width : 100%;
+  background:   #819c53;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+}
+
+img.species{
+  z-Index: 1;
+  height: 32px;
+  float:  left;
+  border: 0px solid black;
+  padding: 0;
+  margin: 7px 0px 7px 7px;
+}
+
+img.affiliation{
+  z-Index: 1;
+  height: 40px;
+  float:  right;
+  border: 0px solid black;
+  padding: 0;
+  margin: 5px 5px 5px 0px;
+}
+
+
+#grm_lastmod {
+  float : right;
+}
+
+#gbot, #gbot ul {
+  list-style: none;
+}
+
+#gbot li:first-child {
+	border-left : 0px;
+}
+
+#gbot li {
+  width: 9em;
+  float: left;
+  text-align: center;
+  font-size: small;
+  font-weight: bold;
+  /* width: 5em; Needed for Opera, but looks bad */
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  border-left : 1px solid black;
+}
+
+#gbot li a {
+  font-size: small;
+  font-weight: bold;
+}
+
+#gbot li#first { float: left; border: 0; text-align:left; width: auto; font-weight: normal; }
+/* #gbot li.last  { float: right } */
+
+
+/*************************************************************
+/ 'Son of Suckerfish' menu - 
+/ http://www.htmldog.com/articles/suckerfish/dropdowns/ 
+/*/
+
+/* Basic styling */
+#gnav, #gnav ul {
+  float:      left;
+  padding:    0;
+  margin:     0;
+  list-style: none;
+  /*padding-left:     1em;*/
+}
+
+#gnav a {
+  display: block;
+  /* width: 5em; Needed for Opera, but looks bad */
+  font-weight: bold; 
+  color: #eedd82;
+  /*font-size: 16pt;*/
+  line-height: 19px;
+  text-decoration: none
+}
+#gnav a:hover {
+  color: darkred;
+}
+
+
+#gnav li {
+  background:       #819c53;
+  border-left:      #ffffff 1px solid;
+  border-right:     #657e39 1px solid;
+  border-top:       #ffffff 0px solid;
+  border-bottom:    #657e39 0px solid;
+  padding-top:      3px;
+  padding-right:    0.3em;
+  padding-bottom:   0px;
+  padding-left:     0.3em;
+  height:           20px;
+  line-height:      20px;
+  float: left;
+  text-align: center;
+  /* width: 5em; Needed for Opera, but looks bad */
+  /* voice-family: "\"}\"";
+  /* voice-family: inherit;
+  /* height:  19px; */
+}
+
+/* Hidden stuff - hide by moving off left of screen (opera needs this) */
+#gnav li ul {
+  z-index: 1;
+  position: absolute;
+  width: 15em;
+  left: -999em;
+}
+
+#gnav li:hover ul, #gnav li.sfhover ul {
+  left: auto;
+}
+
+#gnav li:hover {
+  border-left-color: black; 
+  border-bottom-color: white; 
+  border-top-color: black;
+  border-right-color: white;
+}
+
+#gnav li li {
+  text-align: left;
+  width: 17em;
+}
+
+#gnav li li a {
+  width: 18em;
+}
+
+/* Control first and/or last list entries
+/* LI#first { } */
+#gnav li.last  { 
+/*  background: #657e39; */
+  border: #eedd82 1px solid; 
+  float: right; 
+}
+
+#gnav li.last a {
+  color: white;
+}
+
+/* Fix for IE7 */
+#gnav li:hover, #gnav li.hover {
+  position: static;
+}
+
+/***************************************************
+/ Need to include this javascript in the page header to get IE5 to work
+/ <script type=text/javascript>
+/ startList = function() {
+/   if (document.all&&document.getElementById) {
+/     navRoot = document.getElementById("grm_nav");
+/       for (i=0; i<navRoot.childNodes.length; i++) {
+/         node = navRoot.childNodes[i];
+/         if (node.nodeName=="LI") {
+/           node.onmouseover=function() {
+/           this.className+=" over";
+/         }
+/         node.onmouseout=function() {
+/           this.className=this.className.replace(" over", "");
+/         }
+/       }
+/     }
+/   }
+/ }
+/ if (window.attachEvent)
+/ window.attachEvent("onload",startList);
+/ else
+/ window.onload=startList;
+/ </script>
+/*/

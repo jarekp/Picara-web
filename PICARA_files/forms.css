@@ -1,0 +1,40 @@
+input.button {
+	height : 1.2em;
+	padding: 0.1em;
+	vertical-align: middle;
+	border: 1px solid #819C53;
+	margin-left: 3px;
+	background: #F0F0F0;
+}
+
+input.search {
+	height : 1.6em;
+	vertical-align : middle;
+	border: 1px solid #819C53;
+}
+
+input.grm,
+select.grm,
+input.grm_button {
+  height: 1.4em;
+  padding: 0.1em;
+  vertical-align: bottom;
+  border: 1px solid #819C53;
+  margin-left: 3px;
+}
+
+input.grm_button {
+  /* border-style: outset; */
+  background: #F0F0F0;
+}
+
+select.grm {
+  height: 1.6em;
+}
+
+input.grm:focus,
+select.grm:focus,
+input.grm_button:focus{
+  border-color: darkred;
+  background: #FFFFCC;
+}

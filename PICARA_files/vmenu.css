@@ -1,0 +1,26 @@
+ul.vmenu {
+	margin : 0px;
+	padding : 0px;
+	border-top : 1px solid white;
+	border-left : 1px solid white;
+	list-style : none;
+	width : 150px;
+	display : table-cell;
+	vertical-align : bottom;
+	font-family : sans-serif;
+	font-size : 75%;
+	font-weight : bold;
+}
+
+
+
+ul.vmenu > li:hover {
+	background-color : #C8E79F;
+	text-decoration : underline;
+	cursor : pointer;
+	color : red;
+}
+
+ul.vmenu li {
+	padding-left : 2px;
+}

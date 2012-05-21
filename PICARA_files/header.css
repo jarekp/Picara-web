@@ -1,0 +1,71 @@
+#header {
+	background-color : #819c53;
+	display : table-cell;
+	vertical-align : bottom;
+}
+
+#header div.logo {
+    background-color: #C8E79F; 
+	position : absolute;
+	left : 0px;
+	top : 0px;
+}
+
+#header div.upper {
+	position : absolute;
+	left : 180px;
+	top : 0px;
+	background-color : #C8E79F;
+	right : 0px;
+	height : 34px;
+	font-size : 150%;
+	font-style : italic;
+	display : table-cell;
+	vertical-align : middle;
+	padding-left : 3px;
+	
+}
+
+#header div.lower {
+	position : absolute;
+	left : 180px;
+	top : 34px;
+	right : 0px;
+	height : 24px;		
+	display : table-cell;
+	vertical-align : bottom;
+	background-color : #819c53;
+}
+
+#header table {
+	border-collapse : collapse;
+}
+
+#header td {
+	vertical-align : top;
+}
+
+#lowerright {
+//	font-size : 70%;
+	float : right;
+	color : #eedd82;
+	font-weight : bold;
+	height : 12px;
+	vertical-align : bottom;
+}
+
+#login a {
+	color : #eedd82;
+	text-decoration : none;
+}
+
+#login a:hover{
+	color : darkred;
+	text-decoration : underline;
+}
+
+#login:hover{
+	background-color : #C8E79F;
+	color : darkred;
+	text-decoration : underline;
+}

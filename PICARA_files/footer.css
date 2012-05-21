@@ -1,0 +1,162 @@
+#footer {
+	background-color : #819c53;
+	border : 1px solid black;
+	position : fixed;
+	left : 5px;
+	right : 5px;
+	bottom : 0px;
+}
+
+
+#footer img {
+	height : 16px;
+}
+
+#footer div.button {
+	text-decoration : underline;
+	border : 2px groove #DDDDDD;
+	cursor : pointer;
+}
+
+div.footer_menu {
+	border : 1px solid black;
+	background-color : #819c53;
+	display : none;
+	position : absolute;
+}
+
+div.footer_popup {
+	border : 1px solid black;
+	background-color : #C8E79F;
+	display : none;
+	position : absolute;
+	padding : 1px;
+}
+
+
+div.footer_menu > img {
+	padding-bottom : 2px;
+	width : 150px;
+}
+
+#footer a {
+	color : black;
+	text-decoration : none;
+}
+
+#footer a:hover {
+	color : blue;
+	text-decoration : underline;
+}
+
+div.footer_menu ul li a {
+	text-decoration : none;
+	color : black;
+}
+
+#footer img {
+	border : 0px;
+}
+
+img.right_footer, img.left_footer {
+	float : left;
+	padding-left : 2px;
+	padding-right : 2px;
+	padding-top : 2px;
+}
+
+/* adapted from holy grail 3 column liquid layout provided by http://matthewjamestaylor.com/blog/ultimate-3-column-holy-grail-pixels.htm */
+
+
+#fcolmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+/*	background:#ffd8b7;		/* Left column background colour */
+	min-width : 525px;
+	padding : 0px !important;
+	border-top : 1px solid white;
+}
+#fcolmid {
+	float:left;
+	width:200%;
+	position:relative;
+	left:350px;
+/*	background:#DDD;    	/* Centre column background colour */
+	padding : 0px !important;
+	border-left : 1px solid black !important;
+}
+#fcolright {
+	float:left;
+	width:100%;
+	position:relative;
+	left:50%;
+	margin-left:-515px;
+/*	background:#ff9;    	/* Right column background colour */
+	padding : 0px !important;
+	border-left : 1px solid black !important;
+}
+#fcol1wrap {
+	float:right;
+	width:50%;
+	position:relative;
+	right:100%;
+	padding : 0px !important;
+}
+#fcol1pad {
+	margin:0 0px 0 515px;
+	overflow:hidden;
+	padding : 0px !important;
+}
+#fcol1 {
+	width:100%;
+	overflow:hidden;
+	/*border : 1px solid blue;*/
+	padding : 0px !important;
+}
+#fcol2 {
+	float:left;
+	width:360px;
+	position:relative;
+	margin-left:-50%;
+	left:165px;
+	overflow:hidden;
+	/*border : 1px solid green;*/
+	padding : 0px !important;
+}
+#fcol3 {
+	float:left;
+	width:170px;
+	position:relative;
+	left:0px;
+	overflow:hidden;
+	/*border : 1px solid red;*/
+	padding : 0px !important;
+}
+
+#fcol2 img, #fcol3 img {
+	height : 16px;
+	border : 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

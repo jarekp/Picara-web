@@ -1,0 +1,185 @@
+body.frontpage {
+    margin: 0px;
+}
+
+a.frontpage {
+	text-decoration : none;
+	color : black;
+}
+
+img.frontpage {
+	border : none;
+	padding : 5px;
+	padding-bottom : 15px;
+}
+
+#left {
+	height : 100%;
+	width : 200px;
+	background-color : #819c53;
+	float : left;
+	margin-right : 2px;
+	margin-bottom : 2px;
+	font-family : sans-serif;
+	background-image: url('/static/images/grmbiggrad.png');
+	background-repeat : repeat-x;
+}
+
+img.leftbg {
+	height : 100%;
+	width : 200px;
+	position : fixed;
+	top : 0px;
+	left : 0px;
+	z-index : -5;
+}
+
+#left ul {
+	padding-left : 0px;
+	list-style : none;
+	width : 100%;
+	margin : 0px;
+	font-size : 75%;
+}
+
+#left ul li {
+	margin : 0px;
+	border-top : 1px solid black;
+	padding-left : 4px;
+	padding-right : 4px;
+	padding-top : 4px;
+}
+#left h2 {
+	padding : 0px;
+	margin : 0px;
+	border-top : 2px solid black;
+	width : 100%;
+	text-align : center;
+	margin-top : 5px;
+}
+
+#right h3, #left h3 {
+	margin : 0px;
+	color : darkred;
+	border-top : 2px solid black;
+	text-align : center;
+	margin-top : 3px;
+}
+
+
+#right {
+	height : 100%;
+	width : 200px;
+	background:   #f5ffe6;
+	float : right;
+	margin-left : 2px;
+	margin-bottom : 2px;
+}
+
+#center {
+	padding : 2px;
+}
+
+div.tipbox, div.overbox {
+	border : 1px solid gray;
+	border-collapse : collapse;
+}
+
+div.overbox {
+	font-family : sans-serif;
+	color : blue;
+	padding : 2px;
+}
+
+div.overbox:hover {
+	background-color : lightgray;
+}
+
+div.tipbox > h3 {
+	background-color : #819c53;
+	margin : 0px !important;
+	padding : 0px;
+	width : 100%;
+	text-align : center;
+}
+div.tipbox > div {
+	margin : 2px;
+}
+
+div.frontpage {
+	border : 2px solid #819c53;
+	text-align : center;
+#	float : left;
+#	padding : 3px;
+	margin : 5px auto 5px auto;
+	min-width : 150px;
+	min-height : 165px;
+	width : 150px;
+	
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	
+}
+
+div.frontpage:hover {
+	border : 2px solid blue;
+	cursor : pointer;
+}
+
+div.frontpage:hover a {
+	color : blue;
+	text-decoration : underline;
+}
+
+div.frontpage div.label {
+	background-image : url('/static/images/grmgrad.png');
+	width : 100%;
+	text-align : center;
+	font-size : 120%;
+	margin-bottom : 5px;
+	
+	-moz-border-radius-topleft: 15px;
+	-webkit-border-top-left-radius: 15px;
+	-moz-border-radius-topright: 15px;
+	-webkit-border-top-right-radius: 15px;
+	
+	padding-left : 10px;
+	padding-right : 10px;
+	width : 130px;
+}
+
+
+fieldset {
+
+}
+
+table.frontpage-table {
+	margin-top : 35px;
+	margin-bottom : 15px;
+	border : 2px solid #819c53;
+	padding : 0px;
+	min-width : 560px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	background-color: #fcfcdd;
+	text-align : center;
+}
+
+table.frontpage-table th.label {
+	
+	-moz-border-radius-topleft: 15px;
+	-webkit-border-top-left-radius: 15px;
+	-moz-border-radius-topright: 15px;
+	-webkit-border-top-right-radius: 15px;
+	padding-left : 15px;
+	
+}
+
+th.label {
+	background-image : url('/static/images/grmgrad.png');
+	width : 100%;
+	text-align : left;
+	font-size : 120%;
+	margin : 0px;
+	min-width : 520px;
+}

@@ -1,0 +1,107 @@
+				div.menu_opener {
+					float : right;
+				}
+
+				ul.hmenu {
+					margin : 0px;
+					padding : 0px;
+					list-style : none;
+					width : 100%;
+					font-family : sans-serif;
+					font-size : 70%;
+					font-weight : bold;
+					//color: #eedd82;
+					cursor : pointer;
+				}
+				
+				ul.hmenu li {
+					background-color : #819c53;
+				}
+				
+				ul.hmenu ul li {
+//					line-height : 13px;
+				}
+
+				ul.hmenu > li:first-child {
+					margin-left : 3px;
+				}
+
+				ul.hmenu > li {
+					padding-left : 2px;
+					padding-right : 2px;
+					float : left;
+					display : table-cell;
+					vertical-align : bottom;
+					border-left : 1px solid black;
+					border-right : 1px solid white;
+					height : 12px;
+					color : #eedd82;
+					text-decoration : none;
+				}
+				
+//				ul.hmenu > li.highlight > a {
+//					color : white;
+//				}
+
+				ul.hmenu li:hover {
+					background-color : #C8E79F;
+					color : darkred;
+					text-decoration : underline;
+				}
+				
+				ul.hmenu li.linkless:hover {
+					background-color : #819c53;
+					color : eedd82;
+					text-decoration : none;
+					cursor : auto;
+				}
+
+				ul.hmenu li:hover ul {
+					color : #eedd82;
+					text-decoration : underline;
+				}
+				
+				ul.hmenu > li ul {
+					list-style : none;
+					margin : 0px;
+					padding : 0px;
+					display : none;
+					position : absolute;
+					line-height : 1;
+					width : 200px;
+				}
+				
+				ul.hmenu > li > ul li {
+					padding-top : 2px;
+					padding-bottom : 2px;
+					border-top : 1px solid black;
+				}
+								
+				ul.hmenu > li > ul > li ul {
+					margin : -16px 0 0 200px;                    
+				}
+				
+				ul.hmenu > li:hover > ul {
+					display : block;
+				}
+				
+				ul.hmenu > li:hover > ul > li:hover > ul {
+					display : block;
+				}
+				
+				ul.hmenu > li:hover > ul > li:hover > ul > li:hover > ul {
+					display : block;
+				}
+				
+				ul.hmenu img {
+					height : 12px;
+					width : 12px;
+				}
+				
+				ul.hmenu a {
+					color : #eedd82;
+				}
+
+				ul.hmenu a:hover {
+					color : darkred;
+				}
